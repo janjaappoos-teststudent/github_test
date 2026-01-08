@@ -16,7 +16,7 @@ k <- complex(real = -0.8, imaginary = 0.156)  # Julia parameter
 z <- c
 nJ <- matrix(0, length(x), length(y))
 
-for (i in 1:50) {
+for (i in 1:60) {
   z <- z^2 + k
   nJ[nJ == 0 & abs(z) > 2] <- i
 }
